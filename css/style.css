@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
-.open-sans {
+.open-sans{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -10,9 +10,11 @@
 }
 
 .header{
+    background-color: rgb(255, 248, 243);
     background-image: url(../aset/images/developer.png), url(../aset/images/header_bg.png);
     background-repeat: no-repeat;
     background-position: top left, bottom right;
+    
 }
 
 nav {
@@ -28,9 +30,6 @@ nav>ul{
     gap: 51px;
 }
 
-.dark-2{
-    color: #474747;
-}
 .nav_title {
     font-weight: 800;
     font-size: 45px;
@@ -38,6 +37,14 @@ nav>ul{
 
 .nav_title>span {
     color: rgb(253, 110, 10);
+}
+
+/* shared items */
+.dark-1{
+    columns: #757575;
+}
+.dark-2{
+    color: #474747;
 }
 .btn_main{
     background-color: #FD6E0A;
@@ -47,6 +54,15 @@ nav>ul{
     border-radius: 5px;
     border: none;
 }
+.section-title{
+    font-size: 35px;
+    font-weight: 700;
+    color: #181818;
+}
+.section-description{
+    font-size: 18;
+}
+
 /* banner style */
 .bannar-griting{
     font-size: 45px;
@@ -63,7 +79,81 @@ nav>ul{
     ;
 }
 .banner{
+
     display: flex;
     justify-content: space-between;
     margin: 0 35px 0 200px;
+}
+
+/* about */
+.about{
+    margin: 230px 130px;
+    padding: 131px 156px;
+    border: 10px;
+    border-radius: 10px;
+    background: rgb(255, 248, 243);
+    display: flex;
+    align-items: center;
+
+}
+
+.about-content{
+    border: 1px;
+    background-color: white;
+    text-align: center;
+
+}
+.about-items{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.about-description{
+    color: #474747;
+    font-weight: bold;
+}
+.what_i_do{
+    text-align: center;
+    margin: 230px 130px;
+}
+.what_i_do_items{
+    display: flex;
+    gap: 24px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+.what_i_do_item{
+    padding: 33px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+.what_i_do_title{
+    font-size: 45px;
+    font-weight: 700;
+}
+.what_i_do_description{
+    padding-bottom: 30px;
+}
+
+.footer{
+    padding: 230px 130px;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(255, 248, 243);
+}
+.conncontact_discriptiontact{
+    position: absolute;
+    width: 562px;
+    height: 56px;
+}
+footer input[type="text"],  footer input[type="email"], footer textarea{
+    height: 64px;
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 24px;
+    border: none;
 }
